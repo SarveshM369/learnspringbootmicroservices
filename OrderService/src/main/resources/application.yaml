@@ -1,0 +1,25 @@
+server:
+  port: 8091
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/thiru  
+    username: root
+    password: 3GU14ec039@
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect:org.hibernate.dialect.MySQL8Dialect   
+  application:
+    name: ORDERSERVICE   
+    
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultzone: http://localhost:8761/eureka
+#  instance:
+#    prefer-ip-address: true    
